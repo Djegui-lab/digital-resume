@@ -21,7 +21,7 @@ st.subheader("merci pour votre analyse")
 uploaded_file = st.file_uploader('Choisir un fichier XLSX ', type='xlsx')
 if uploaded_file:
     st.markdown('---')
-    df = pd.read_excel("C:/Users/HP/PycharmProjects/nex_data_assurance.xlsx", engine='openpyxl')
+    df = pd.read_excel("nex_data_assurance.xlsx", engine='openpyxl')
     st.dataframe(df)
 
     groupby_column = st.selectbox(
